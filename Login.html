@@ -1,0 +1,52 @@
+<HTML>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="ValidaCuenta.js"></script>
+</head>
+<HEADER><TITLE> Ingreso a cuenta </TITLE></HEADER>
+<style>
+body {
+	color: #4C79E9;
+	background-color: #F895A5;
+	font-family: Georgia, Times New Roman;
+	font-size: 16px;
+}
+fieldset {
+	margin: 1em auto;
+	width: 20em;
+	height: 11em;
+}
+label {
+	font-weight: bold;
+	display: block;
+}
+input:focus, select:focus {
+	background-color: yellow;
+}
+input:hover, select:hover {
+	background-color: blue;
+}
+#boton {
+	font-size: 1em;
+	padding: 0.25em;
+}
+</style>
+<body>
+<CENTER>
+<BR><BR><BR><BR><BR><BR><BR>
+<fieldset>
+<label for="usuario">Correo Electrónico:</label><input type="text" name="correo" id="correo"/>
+<label for="contrasena">Contraseña:</label><input type="text" name="contrasena" id="contrasena"/>
+<P>
+Has olvidado tu contraseña? <BR><A HREF="Rcontrasena.html"> Recuperar Contraseña </A>
+<CENTER>
+<INPUT TYPE="button" id="bot" name="bot" VALUE="Confirmar" />
+</CENTER>
+<P>
+</fieldset>
+
+<P>
+<A HREF="Index.html"><IMG SRC="home.png" WIDTH="50" HEIGHT="50"></A>
+</CENTER>
+</BODY>
+</HTML>

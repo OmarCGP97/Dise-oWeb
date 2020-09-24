@@ -1,0 +1,219 @@
+<HTML>
+<HEAD></HEAD>
+<style>
+
+.cajas {
+	padding: 10px 0px 0px 0px;
+	height:400px;
+}
+.caja {
+	width: 490px;
+	height: 400px;
+	float:left;
+	padding: 0px 20px 0px 10px;
+}
+.caja H1 {
+	font-size:18px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	color: #1D2BBF ;
+	padding: 27px 30px 27px 51px;
+	font-weight:100;
+	text-align: center;
+}
+*{box-sizing: border-box;}
+
+.contenedor {
+  max-width: 600px;
+  position: relative;
+}
+.texto {
+  color: #F4EA57 ;
+  font-size: 14px;
+  padding: 2px 2px;
+  position: absolute;
+  bottom: 2px;
+  width: 100%;
+  text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+  text-align: center;
+}
+.numeroslide {
+  color: #85CB8A;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+}
+.punto {
+  height: 8px;
+  width: 8px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 20%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.relleno {
+  background-color: #717171;
+}
+body {
+	color: #4C79E9;
+	background-color: #F895A5;
+	font-family: Georgia, Times New Roman;
+	font-size: 17.5px;
+	text-align: justify;
+}
+fieldset {
+	margin-left: 10em auto;
+	width: 25em;
+	height: 26em;
+}
+
+</style>
+<BODY>
+<H1><I><CENTER><FONT COLOR=#4C79E9 SIZE=5> JOL Electronics Bast&oacuten Inteligente </FONT></CENTER></I></H1>
+
+<div class="cajas">
+<div class="caja">
+<h1>¿Qu&eacute es JOL Electronics?</h1>
+<div style="padding-left:7px;">
+<span class="span_cont">
+
+<fieldset>
+<div class="contenedor">
+
+<div class="mySlides fade">
+<div class="numeroslide">1 / 5</div>
+<img src="LogoJOL.png" style="width:100%">
+<div class="texto">Bienvenido a JOL Electronic's</div>
+</div>
+
+<div class="mySlides fade">
+<div class="numeroslide">2 / 5</div>
+<img src="Circuito.jpg" style="width:100%">
+<div class="texto">Desarrollamos prodcutos de tecnología biomedicos</div>
+</div>
+
+<div class="mySlides fade">
+<div class="numeroslide">3 / 5</div>
+<img src="Equipo.jpeg" style="width:100%">
+<div class="texto">Conoce a nuestro equipo de ingenieros</div>
+</div>
+
+<div class="mySlides fade">
+<div class="numeroslide">4 / 5</div>
+<img src="Medicion.jpg" style="width:100%">
+<div class="texto">Integramos los mejores componentes</div>
+</div>
+
+<div class="mySlides fade">
+<div class="numeroslide">5 / 5</div>
+<img src="Producto.jpg" style="width:100%">
+<div class="texto">Logrando el mejor producto para ti!</div>
+</div>
+
+</div>
+
+<div style="text-align:left">
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<span class="punto"></span> 
+<span class="punto"></span> 
+<span class="punto"></span> 
+<span class="punto"></span> 
+<span class="punto"></span> 
+</div>
+</fieldset>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var puntos = document.getElementsByClassName("punto");
+  
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length)
+	slideIndex = 1
+  for (i = 0; i < puntos.length; i++) {
+    puntos[i].className = puntos[i].className.replace(" llenar", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  puntos[slideIndex-1].className += " llenar";
+  setTimeout(showSlides, 4000);
+}
+</script>
+
+</span><br />
+</div> <br />
+</div>
+   	
+<div style="width:10px; float:left; height:15px;"></div>
+<div class="caja">
+<h1>Bienvenido a nuestra pagina WEB</h1>
+<div style="padding-left:7px;">
+<span class="span_cont">     
+
+<TABLE>
+Lista de actividades para poder realizar:
+<OL>
+<li>Crear Cuenta
+<li>Hacer Login
+</OL>
+</TABLE>
+<TABLE>
+Beneficios de uso de la cuenta:
+<UL>
+<li>Optimo funcionamiento con dispositvo.
+<li>Comunicación via Internet.
+<li>Publicación constante de datos e información online.
+</UL>
+<P>
+Presiona aquí para crear cuenta: <A HREF="Cuenta.html"> Cuenta Nueva </A>
+<BR>
+Si ya tienes cuenta presiona aquí para hacer login: <A HREF="Login.html"> Ingreso </A>
+<BR>
+</TABLE>
+<TABLE>
+<BR>
+Costos de Mantenimiento: 
+<BR>
+1 mes -----> $1000 <BR>
+6 meses ---> $4000<BR>
+1 año -----> $6000 <BR>
+<BR>
+</TABLE> 
+Contacto directo: en <A HREF="A01373707@itesm.mx"> atencionacliente@JolElectronics.com </A>
+</span><br />
+<br />
+</div> <br />
+</div>     	
+
+<div style="width:10px; float:left;  height:15px;"></div>
+<div class="caja">
+<h1 class="tit_img3">¿Qué ofrece nuestro producto?</h1>
+<div style="padding-left:7px;">
+<span class="span_cont">
+
+Nuestro bastón inteligente permite tener un monitoreo constante sobre tu estado físico en términos de salud y localización para poder apoyar en situaciones de riesgo que al ser detectadas se informarán a los familiares deseados reportando cualquier anomalía o evento relevante, todo mediante el uso de un microcontrolador y un sistema inteligente que permita la comunicación recurrente con adecuadas mediciones que verifiquen el correcto estado del usuario.<br>
+<br>
+Estas mediciones se efectuan con la ayuda de un oximetro, un acelerometro/giroscopio y un modulo GPS.<br> 
+<br>
+Con los anteriores podemos detectar y avisar sobre caidas por parte del usuario, mandando la ubicación exacta donde está tomo lugar así como reportes constantes sobre su estado respiratorio.
+<br><br>
+<img src="señal.png" align="right" width="300" height="120">		    
+</span><br />
+</div> <br />
+</div>          	
+</div>
+
+<br><br><br><br><br><br><br><br>
+<Center><FOOTER><FONT SIZE=2> Registered LTD. JOL ELECTRONICS 2020</FONT></FOOTER></Center>
+</BODY>
+</HTML>

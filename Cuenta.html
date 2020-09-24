@@ -1,0 +1,237 @@
+<HTML>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="CreaCuenta.js" ></script>
+</head>
+<HEADER><TITLE>Registro de Cuenta</TITLE></HEADER>
+<style>
+body {
+	color: #4C79E9;
+	background-color: #F895A5;
+	font-family: Times New Roman, Helvetica, Arial;
+	width: 85%;
+	margin: 2em auto;
+}
+header {
+	text-align: center;
+}
+h1 {
+font-family: Times New Roman, serif;
+}
+h1 {
+	font-size: 4em;
+}
+h2 {
+	font-size: 2em;
+}
+span {
+	color: #060;
+}
+fieldset {
+	margin: 1em auto;
+}
+legend {
+	font-size: 2em;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+label {
+	font-weight: bold;
+	display: block;
+}
+input:focus, select:focus {
+	background-color: yellow;
+}
+input:hover, select:hover {
+	background-color: blue;
+}
+#boton {
+	font-size: 1em;
+	padding: 0.5em;
+}
+
+</style>
+<body>
+<header><H1>Registro de Cuenta</H1></header>
+<header><H2>Por favor llene el siguiente formulario:</H2></header>
+
+<FORM ACTION="Registro.html" METHOD="get">
+<form action="" method="post">
+
+<fieldset>
+<legend>Datos personales</legend>
+<p>
+<label for="nombre">Nombre(s)</label><input type="text" name="nombre" id="nombre"/>
+<label for="apellidos">Apellidos</label><input type="text" name="apellidos" id="apellidos"/>
+<label for="telefono">N&uacutemero de Tel&eacutefono</label><input type="text" name="telefono" id="telefono"/>
+<label for="correo">eMail</label><input type="text" name="correo" id="correo"/>
+<label for="dia">Fecha de nacimiento</label>
+<select name="dia" id="dia"><option>Dia</option><option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+						<option>5</option>
+						<option>6</option>
+						<option>7</option>
+						<option>8</option>
+						<option>9</option>
+						<option>10</option>
+						<option>11</option>
+						<option>12</option>
+						<option>13</option>
+						<option>14</option>
+						<option>15</option>
+						<option>16</option>
+						<option>17</option>
+						<option>18</option>
+						<option>19</option>
+						<option>20</option>
+						<option>21</option>
+						<option>22</option>
+						<option>23</option>
+						<option>24</option>
+						<option>25</option>
+						<option>26</option>
+						<option>27</option>
+						<option>28</option>
+						<option>29</option>
+						<option>30</option>
+						<option>31</option></select>
+<select name="mes" id="mes"><option>Mes</option><option>Enero</option>
+						<option>Febrero</option>
+						<option>Marzo</option>
+						<option>Abril</option>
+						<option>Mayo</option>
+						<option>Junio</option>
+						<option>Julio</option>
+						<option>Agosto</option>
+						<option>Septiembre</option>
+						<option>Octubre</option>
+						<option>Noviembre</option>
+						<option>Diciembre</option></select>
+<select name="anyo" id="anyo"><option>Año</option><option>1920</option>
+						<option>1921</option>
+						<option>1922</option>
+						<option>1923</option>
+						<option>1924</option>
+						<option>1925</option>
+						<option>1926</option>
+						<option>1927</option>
+						<option>1928</option>
+						<option>1929</option>
+						<option>1930</option>
+						<option>1931</option>
+						<option>1932</option>
+						<option>1933</option>
+						<option>1934</option>
+						<option>1935</option>
+						<option>1936</option>
+						<option>1937</option>
+						<option>1938</option>
+						<option>1939</option>
+						<option>1940</option>
+						<option>1941</option>
+						<option>1942</option>
+						<option>1943</option>
+						<option>1944</option>
+						<option>1945</option>
+						<option>1946</option>
+						<option>1947</option>
+						<option>1948</option>
+						<option>1949</option>
+						<option>1950</option>
+						<option>1951</option>
+						<option>1952</option>
+						<option>1953</option>
+						<option>1954</option>
+						<option>1955</option>
+						<option>1956</option>
+						<option>1957</option>
+						<option>1958</option>
+						<option>1959</option>
+						<option>1960</option>
+						<option>1961</option>
+						<option>1962</option>
+						<option>1963</option>
+						<option>1964</option>
+						<option>1965</option>
+						<option>1966</option>
+						<option>1967</option>
+						<option>1968</option>
+						<option>1969</option>
+						<option>1970</option>
+						<option>1971</option>
+						<option>1972</option>
+						<option>1973</option>
+						<option>1974</option>
+						<option>1975</option>
+						<option>1976</option>
+						<option>1977</option>
+						<option>1978</option>
+						<option>1979</option>
+						<option>1980</option>
+						<option>1981</option>
+						<option>1982</option>
+						<option>1983</option>
+						<option>1984</option>
+						<option>1985</option>
+						<option>1986</option>
+						<option>1987</option>
+						<option>1988</option>
+						<option>1989</option>
+						<option>1990</option>
+						<option>1991</option>
+						<option>1992</option>
+						<option>1993</option>
+						<option>1994</option>
+						<option>1995</option>
+						<option>1996</option>
+						<option>1997</option>
+						<option>1998</option>
+						<option>1999</option>
+						<option>2000</option></select>
+</p>
+</fieldset>
+
+<fieldset>
+<legend>Datos de Vivienda</legend>
+<p>
+<label for="pais">País</label><input type="text" name="pais" id="pais"/>
+<label for="estado">Estado</label><input type="text" name="estado" id="estado"/>
+<label for="municipio">Municipio</label><input type="text" name="municipio" id="municipio"/>
+<label for="colonia">Colonia</label><input type="text" name="colonia" id="colonia"/>
+<label for="calle">Calle</label><input type="text" name="calle" id="calle"/>
+<label for="cp">Código Postal</label><input type="text" name="cp" id="cp"/>
+</p>
+</fieldset>
+
+<fieldset>
+<legend>Datos de Cuenta</legend>
+<p>
+<label for="usuario">Nombre de Usuario</label><input type="text" name="usuario" id="usuario"/>
+<label for="contrasena">Contraseña</label><input type="text" name="contrasena" id="contrasena"/>
+<label for="ocontrasena">Ingresa Contraseña Nuevamente</label><input type="text" name="ocontrasena" id="ocontrasena"/>
+<label for="cuenta">Membresia de mantenimiento</label>
+<select name="cuenta" id="cuenta"><option></option><option>1 Mes</option><option>6 Meses</option><option>1 Año</option></select>
+</p>
+</fieldset>
+
+<fieldset>
+<p>
+<input type="checkbox" name="acepto" id="acepto" />
+<label for="acepto" class="inline">Al hacer click aceptas los terminos y condiciones de privacidad de la compañia</label>
+</p>
+</fieldset>
+
+<P>
+<CENTER>
+<INPUT TYPE="Button" VALUE="Crear Cuenta" id="bot" name="bot"/>
+</CENTER>
+<P/>
+
+<CENTER>
+<A HREF="Index.html"><IMG SRC="home.png" WIDTH="50" HEIGHT="50"></a>
+</CENTER>
+</FORM>
+</BODY>
+</HTML>
